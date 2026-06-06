@@ -1,0 +1,14 @@
+(include_subdirs unqualified)
+
+(library
+ (name animora)
+ ; Include everything EXCEPT the standalone test scripts
+ (modules
+  (:standard \ run_parser main)))
+
+(executable
+ (name run_parser)
+ (modules run_parser)
+ (libraries animora))
+
+

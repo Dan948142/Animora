@@ -1,0 +1,26 @@
+(lang dune 3.21)
+
+(name animora)
+
+(generate_opam_files true)
+
+(source
+ (github YugBargaway2006/Animora-DSL-for-Animations))
+
+(authors "Yug Bargaway <yugbargawayskills@gmail.com>")
+
+(maintainers "Yug Bargaway <yugbargawayskills@gmail.com>")
+
+(license LICENSE)
+
+(documentation https://github.com/YugBargaway2006/Animora-DSL-for-Animations/blob/main/README.md)
+
+(package
+ (name animora)
+ (synopsis "Animora is a robust Domain-Specific Language (DSL) written in OCaml designed to make 2D animation creation accessible and programmable. It abstracts away complex rendering math by compiling expressive .anim scripts directly into standalone, zero-dependency HTML, CSS, and JavaScript.")
+ (description "Animora is an expressive, purpose-built Domain-Specific Language (DSL) that reimagines how text-based animations and interactive web components are created. Traditionally, building algorithm visualizations or web animations requires wrestling with heavyweight GUI tools or writing hundreds of lines of boilerplate HTML5 Canvas and JavaScript code. Animora bridges this gap by making shapes, motion, timing, easing, keyframes, and interactivity first-class citizens of the language. Powered by a custom compiler built in OCaml, developers can write clean, declarative .anim files which are instantly transpiled into optimized web code that runs natively in any browser. Animora is ideally suited for computer science students visualizing complex data structures (like DFS, Dijkstra's, or Turing Machines), educators designing interactive learning aids, and creative coders building generative art or 2D games (like Pong and Flappy Bird). By abstracting away the render loops and coordinate math, Animora empowers users to focus purely on the algorithm, logic, and visual flow of their creations.")
+ (depends ocaml)
+ (tags
+  (dsl ocaml animation compiler transpiler web-development algorithm-visualization creative-coding educational-tool state-machines game-development html5-canvas)))
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html

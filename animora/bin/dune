@@ -1,0 +1,4 @@
+(executable
+ (public_name animora)
+ (name main)
+ (libraries animora unix static_check))
